@@ -1,34 +1,68 @@
-# Heart Failure Prediction
+# Cardiovascular Risk Prediction
 
-Machine learning project for predicting heart failure risk using clinical patient data.
+Machine learning project for predicting cardiovascular disease risk using clinical patient data.
 
 ## Project Overview
 
-This project explores clinical variables associated with heart failure and builds machine learning models to predict patient outcomes.
+This project explores clinical and lifestyle variables associated with cardiovascular disease and builds machine learning models to predict patient outcomes.
 
-The goal is to develop a reproducible data science workflow including:
+The objective is to develop a reproducible data science workflow including:
 
 - Exploratory Data Analysis (EDA)
 - Data preprocessing and feature engineering
 - Baseline machine learning models
 - Model evaluation and interpretation
 
+## Problem Statement
+
+Cardiovascular disease is one of the leading causes of death worldwide.  
+Early detection of high-risk patients can support preventive healthcare strategies.
+
+This project aims to build a machine learning model capable of predicting the presence of cardiovascular disease based on patient clinical measurements and lifestyle indicators.
+
 ## Dataset
 
-The dataset used in this project is the **Heart Failure Clinical Records Dataset** from the **UCI Machine Learning Repository**.
+The dataset used in this project is the **Cardiovascular Disease Dataset** available on Kaggle.
 
-It contains clinical features such as:
+Source:  
+https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset
+
+The dataset contains approximately **70,000 patient records** with clinical and lifestyle features used to predict the presence of cardiovascular disease.
+
+### Features include
 
 - Age
-- Serum creatinine
-- Ejection fraction
-- Platelets
-- Serum sodium
-- High blood pressure
-- Diabetes
+- Height
+- Weight
+- Gender
+- Blood pressure (systolic and diastolic)
+- Cholesterol level
+- Glucose level
 - Smoking status
+- Alcohol intake
+- Physical activity
 
-These variables are used to predict **heart failure-related death events**.
+### Target variable
+
+- **cardio** → presence or absence of cardiovascular disease (binary classification)
+
+### Download Instructions
+
+Due to licensing restrictions, the dataset is **not included in this repository**.
+
+To reproduce the analysis:
+
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
+
+2. Extract the file:
+```
+cardio_train.csv
+```
+
+3. Place it in the following directory:
+```
+data/raw/cardio_train.csv
+```
 
 ## Technologies
 
@@ -45,7 +79,7 @@ The project uses the following tools and libraries:
 ## Project Structure
 
 ```
-heart-failure-prediction
+Cardiovascular Risk Prediction
 │
 ├── data            # dataset and processed data
 ├── notebooks       # exploratory analysis and modeling
