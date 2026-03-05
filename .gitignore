@@ -1,0 +1,22 @@
+# data (ignore dataset contents)
+data/raw/**
+data/processed/**
+data/external/**
+
+# keep empty dirs
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+
+# notebooks
+.ipynb_checkpoints/
+
+# models
+models/**
+
+# env
+.env
