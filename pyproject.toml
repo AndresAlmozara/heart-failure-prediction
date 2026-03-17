@@ -1,5 +1,5 @@
 [tool.ruff]
-line-length = 88
+line-length = 100
 target-version = "py311"
 fix = true
 
@@ -11,7 +11,6 @@ select = [
     "B",
     "UP"
 ]
-
 ignore = [
     "E501"
 ]
@@ -19,3 +18,4 @@ ignore = [
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+skip-magic-trailing-comma = true
